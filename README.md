@@ -2,6 +2,7 @@
 Well, we built a content-based recommendation system that suggests movies similar to the one a user enters.
 
 Q1) ***Why did we choose Content-Based Filtering?***
+
 There are two major types of recommendation systems:
 Collaborative Filtering: Uses past user interactions (e.g., “People who liked Star Wars also liked Guardians of the Galaxy”).
 Content-Based Filtering: Matches items based on their features (e.g., genre, plot, director, etc.).
@@ -13,6 +14,7 @@ We chose content-based because:
 
  
 Q2) ***Why Did We Use Cosine Similarity?***
+
 To compare movies, we need to measure how similar two movies are based on their features.
 The best way? Cosine similarity.
 
@@ -24,12 +26,14 @@ If the angle is big (close to 0), they are not similar at all.
 
 
 Q3) ***Why Not Use ANN (Approximate Nearest Neighbors)?***
+
 ANN (like Faiss) is much faster, but it's not always as accurate because it approximates similarities.
 For small/medium datasets, cosine similarity is better because it gives exact results.
 If we had millions of movies, then ANN would be a better choice.
 
 
 Q4) ***Why Did We Use TF-IDF for Plot Descriptions?***
+
 We wanted to compare movie plots to find similar ones.
 The best way? TF-IDF (Term Frequency - Inverse Document Frequency).
 
@@ -40,6 +44,7 @@ This helps important words stand out and removes common words that don’t add v
 
 
 Q5) ***Why Not Use Word Embeddings (Word2Vec, BERT)?***
+
 TF-IDF is simple and works well for small datasets.
 Word embeddings need a lot of training data.
 If we used deep learning models like BERT, we would need way more computing power.
@@ -47,6 +52,7 @@ For now, TF-IDF gives a good balance between speed and accuracy.
 
 
 Q6) ***Why Didn’t We Use a Machine Learning Model?***
+
 You might think:
 "Wait, isn’t this machine learning? Where’s the training?"
 Well… this is a type of ML, but it’s not a supervised learning model.
@@ -62,6 +68,8 @@ Understanding Vector Similarity → Learn more about cosine similarity, Euclidea
 Text Processing for ML → Look into TF-IDF, Word2Vec, and BERT to understand how machines process text.
 Hybrid Recommender Systems → Read about how Netflix & Spotify combine collaborative and content-based filtering.
 Scaling ML Systems → When dealing with huge datasets, tools like Faiss (for ANN) and matrix factorization techniques help.
+
+P.S.: I used the dataset "movies_metadata.csv" from Kaggle but couldn't upload the dataset because it was large to upload. So, the link: https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset/discussion 
 
 
 
