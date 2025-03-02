@@ -123,7 +123,7 @@ What can we learn from this project?
 
 -Make recommendations more robust
 
-P.S.: I used the dataset "movies_metadata.csv" from Kaggle but couldn't upload the dataset because it was large to upload. So, the link: https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset/discussion 
+P.S.: I used the dataset "movies_metadata.csv" from Kaggle but couldn't upload the dataset because it was large to upload. So, the link: https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset/data 
 
 
 
