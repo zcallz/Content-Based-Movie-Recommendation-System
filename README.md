@@ -27,8 +27,11 @@ The best way? Cosine similarity.
 **How It Works**
 
 -Every movie is represented as a vector (a list of numbers).
+
 -We calculate the angle between two movie vectors.
+
 -If the angle is small (close to 1), they are very similar.
+
 -If the angle is big (close to 0), they are not similar at all.
 
 
@@ -50,7 +53,9 @@ The best way? TF-IDF (Term Frequency - Inverse Document Frequency).
 **How TF-IDF Works**
 
 -It converts text into numerical vectors, so we can compare movie plots.
+
 -Words that appear a lot in one movie plot but rarely in others get more weight.
+
 -This helps important words stand out and removes common words that don’t add value (like “the”, “and”, etc.).
 
 
