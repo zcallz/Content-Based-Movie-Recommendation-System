@@ -104,6 +104,7 @@ If we only used exact matching, these mistakes would cause an error like:
 Solution? → Fuzzy matching!
 
 ***-Conclusion-***
+
 What can we learn from this project?
 
 *Understanding Vector Similarity → Learn more about cosine similarity, Euclidean distance, Pearson correlation, etc.
