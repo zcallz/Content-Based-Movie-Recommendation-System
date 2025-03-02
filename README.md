@@ -10,8 +10,11 @@ Collaborative Filtering: Uses past user interactions (e.g., “People who liked 
 Content-Based Filtering: Matches items based on their features (e.g., genre, plot, director, etc.).
 
 We chose content-based because:
+
  No need for user data → Works even if no one has watched the movie before.
+ 
  Good for niche recommendations → If you like historical dramas, we don’t just recommend popular movies, but actual similar ones.
+ 
  Easier to understand and debug → We know exactly why a movie was recommended.
 
  
