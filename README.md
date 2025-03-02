@@ -4,7 +4,9 @@ Well, we built a content-based recommendation system that suggests movies simila
 Q1) ***Why did we choose Content-Based Filtering?***
 
 There are two major types of recommendation systems:
+
 Collaborative Filtering: Uses past user interactions (e.g., “People who liked Star Wars also liked Guardians of the Galaxy”).
+
 Content-Based Filtering: Matches items based on their features (e.g., genre, plot, director, etc.).
 
 We chose content-based because:
