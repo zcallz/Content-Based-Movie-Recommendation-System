@@ -85,16 +85,42 @@ So instead, we used vector similarity, which is an ML technique but doesn’t re
 
 If we had user rating data, we could train an ML model (like a neural network or a random forest) to predict which movies a user will like.
 
+Q7) ***What is fuzzy match and why did we use it?***
+
+Fuzzy matching is a technique used to compare two text strings and find similarities, even if there are typos, different cases, or slight variations in spelling.
+
+When a user types a movie name, they might make mistakes like:
+
+-Typing errors: “Intersteller” instead of “Interstellar”
+
+-Case differences: “the godfather” instead of “The Godfather”
+
+-Extra spaces or symbols: “Avengers:endgame” instead of “Avengers: Endgame”
+
+If we only used exact matching, these mistakes would cause an error like:
+
+"Movie not found!"
+
+Solution? → Fuzzy matching!
+
 ***-Conclusion-***
+What can we learn from this project?
 
+*Understanding Vector Similarity → Learn more about cosine similarity, Euclidean distance, Pearson correlation, etc.
 
-Understanding Vector Similarity → Learn more about cosine similarity, Euclidean distance, Pearson correlation, etc.
+*Text Processing for ML → Look into TF-IDF, Word2Vec, and BERT to understand how machines process text.
 
-Text Processing for ML → Look into TF-IDF, Word2Vec, and BERT to understand how machines process text.
+*Hybrid Recommender Systems → Read about how Netflix & Spotify combine collaborative and content-based filtering.
 
-Hybrid Recommender Systems → Read about how Netflix & Spotify combine collaborative and content-based filtering.
+*Scaling ML Systems → When dealing with huge datasets, tools like Faiss (for ANN) and matrix factorization techniques help.
 
-Scaling ML Systems → When dealing with huge datasets, tools like Faiss (for ANN) and matrix factorization techniques help.
+*We used fuzzy matching to:
+
+-Handle typos and small variations
+
+-Improve user experience by reducing errors
+
+-Make recommendations more robust
 
 P.S.: I used the dataset "movies_metadata.csv" from Kaggle but couldn't upload the dataset because it was large to upload. So, the link: https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset/discussion 
 
